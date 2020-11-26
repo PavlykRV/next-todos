@@ -1,14 +1,7 @@
 import actionTypes from '../actions/actionTypes';
 import { HYDRATE } from 'next-redux-wrapper';
 
-const initialState = [
-  {
-    id: new Date().getTime(),
-    title: 'Some initial todo title',
-    content: 'Some initial todo content',
-    completed: false,
-  },
-];
+const initialState = [];
 
 const todosReducer = (state = initialState, action) => {
   switch (action.type) {

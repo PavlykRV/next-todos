@@ -1,7 +1,7 @@
 import React from 'react';
 import { Typography } from '@material-ui/core';
 import Todo from './components/TodoItem/Todo';
-import { useTodoSelect } from '../../selectors/todos';
+import useTodoSelect from '../../selectors/todos';
 
 const TodosList = () => {
   const todos = useTodoSelect();
@@ -10,9 +10,12 @@ const TodosList = () => {
 
   return (
     <div>
-      <Typography variant='h6' gutterBottom>
-        Active todos:
-      </Typography>
+      {activeTodos.length > 0 && (
+        <Typography variant='h6' gutterBottom>
+          Active todos:
+        </Typography>
+      )}
+
       {activeTodos.map(({ id, title, content, completed }) => (
         <Todo
           key={id}
@@ -22,9 +25,12 @@ const TodosList = () => {
           completed={completed}
         />
       ))}
-      <Typography variant='h6' gutterBottom>
-        Completed todos:
-      </Typography>
+      {completedTodos.length > 0 && (
+        <Typography variant='h6' gutterBottom>
+          Completed todos:
+        </Typography>
+      )}
+
       {completedTodos.map(({ id, title, content, completed }) => (
         <Todo
           key={id}

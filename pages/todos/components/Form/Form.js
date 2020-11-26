@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { TextField } from '@material-ui/core';
 
 import { addTodo } from '../../../../actions/todoActions';
-import { useTodoSelect } from '../../selectors/todos'
+import useTodoSelect from '../../selectors/todos'
 
 import styles from './Form.scss';
 

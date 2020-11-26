@@ -11,7 +11,7 @@ import ArrowBack from '@material-ui/icons/ArrowBackIos';
 import Form from './components/Form/Form';
 import TodosList from './components/TodoList/TodoList';
 
-import { useTodoSelect } from './selectors/todos'
+import useTodoSelect from './selectors/todos'
 
 const Todos = () => {
   const todos = useTodoSelect();
