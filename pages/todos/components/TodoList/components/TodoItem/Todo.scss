@@ -1,0 +1,23 @@
+.wrapper {
+  display: flex;
+  margin-bottom: 20px;
+
+  &.active {
+    opacity: 0.5;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.content {
+  flex: 1 1 auto;
+  padding: 10px 20px;
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
