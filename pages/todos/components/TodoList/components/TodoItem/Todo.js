@@ -9,7 +9,7 @@ import {
   IconButton,
 } from '@material-ui/core';
 import DeleteIcon from '@material-ui/icons/Delete';
-import styles from './todo.scss';
+import styles from './Todo.scss';
 
 const Todo = (props) => {
   const dispatch = useDispatch();
