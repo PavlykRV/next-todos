@@ -35,13 +35,13 @@ const Form = () => {
     <div className={styles.formWrapper}>
       <form noValidate autoComplete='off' onSubmit={handleFormSubmit}>
         <TextField
-          id='standard-basic'
+          id='title'
           label='Add todo title'
           fullWidth
           margin='normal'
         />
         <TextField
-          id='standard-basic'
+          id='content'
           label='Add todo message'
           fullWidth
           margin='normal'
